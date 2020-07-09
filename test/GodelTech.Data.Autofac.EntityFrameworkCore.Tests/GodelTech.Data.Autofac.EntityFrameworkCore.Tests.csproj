@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\GodelTech.Data.Autofac.EntityFrameworkCore\Aurochses.Data.Autofac.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\src\GodelTech.Data.Autofac.EntityFrameworkCore\GodelTech.Data.Autofac.EntityFrameworkCore.csproj" />
   </ItemGroup>
 
 </Project>
