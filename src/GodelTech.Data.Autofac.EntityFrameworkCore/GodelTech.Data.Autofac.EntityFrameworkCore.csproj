@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <PackageId>GodelTech.Data.Autofac.EntityFrameworkCore</PackageId>
-    <Version>1.0.0-rc.1</Version>
+    <VersionPrefix>1.0.0-rc.2</VersionPrefix>
     <Authors>v.rodchenko</Authors>
     <Company>Godel Technologies</Company>
     <Description>Library for using Autofac in modules with Entity Framework Core.</Description>
@@ -14,6 +14,15 @@
     <RepositoryUrl>https://github.com/GodelTech/GodelTech.Data.Autofac.EntityFrameworkCore</RepositoryUrl>
     <PackageTags>Autofac Data Business Module Entity Framework Core</PackageTags>
 
+    <!-- XML documentation -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <!-- Source Link needs this -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
     <!-- SonarQube needs this -->
     <ProjectGuid>{00000000-0000-0000-0000-000000000001}</ProjectGuid>
   </PropertyGroup>
@@ -21,6 +30,9 @@
   <ItemGroup>
     <PackageReference Include="Autofac" Version="5.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
+
+    <!-- Source Link needs this -->
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
   </ItemGroup>
 
 </Project>
